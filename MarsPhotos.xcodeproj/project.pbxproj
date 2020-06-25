@@ -3,17 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10EB799DFD77233A35811599 /* Pods_MarsPhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E535B280E0AB1F714E6DB7 /* Pods_MarsPhotosTests.framework */; };
 		7B4472A424A12896005942F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472A324A12896005942F4 /* AppDelegate.swift */; };
-		7B4472A624A12896005942F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472A524A12896005942F4 /* SceneDelegate.swift */; };
-		7B4472A824A12896005942F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472A724A12896005942F4 /* ViewController.swift */; };
-		7B4472AB24A12896005942F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4472A924A12896005942F4 /* Main.storyboard */; };
 		7B4472AD24A12899005942F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4472AC24A12899005942F4 /* Assets.xcassets */; };
 		7B4472B024A12899005942F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4472AE24A12899005942F4 /* LaunchScreen.storyboard */; };
 		7B4472BB24A1289A005942F4 /* MarsPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472BA24A1289A005942F4 /* MarsPhotosTests.swift */; };
+		7B4472CC24A1319A005942F4 /* NasaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472CB24A1319A005942F4 /* NasaClient.swift */; };
+		7B4472D124A1453C005942F4 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472D024A1453C005942F4 /* Content.swift */; };
+		7B4472D624A146E8005942F4 /* MarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472D524A146E8005942F4 /* MarsCell.swift */; };
+		7B4472D924A14ADC005942F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472D824A14ADC005942F4 /* Extensions.swift */; };
+		7B8F721F24A1A45B003ED20A /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F721E24A1A45B003ED20A /* MainCollectionViewController.swift */; };
+		7B8F722324A1E2DA003ED20A /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F722224A1E2DA003ED20A /* Operations.swift */; };
+		7BC7577424A42ACC00D68C48 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7577324A42ACC00D68C48 /* photos.json */; };
+		F10425DB2DC0BB3480D4DD25 /* Pods_MarsPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751CEDF3D7E8800EB1D305EC /* Pods_MarsPhotos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +33,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14446B04B71F519540EE66CC /* Pods-MarsPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotos.release.xcconfig"; path = "Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		3324412527A2D3959B1A8B79 /* Pods-MarsPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotosTests.debug.xcconfig"; path = "Target Support Files/Pods-MarsPhotosTests/Pods-MarsPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65BE24A655EEB264E179FAB9 /* Pods-MarsPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotos.debug.xcconfig"; path = "Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		751CEDF3D7E8800EB1D305EC /* Pods_MarsPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4472A024A12896005942F4 /* MarsPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4472A324A12896005942F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B4472A524A12896005942F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B4472A724A12896005942F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B4472AA24A12896005942F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B4472AC24A12899005942F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4472AF24A12899005942F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B4472B124A12899005942F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4472B624A1289A005942F4 /* MarsPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4472BA24A1289A005942F4 /* MarsPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotosTests.swift; sourceTree = "<group>"; };
 		7B4472BC24A1289A005942F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4472CB24A1319A005942F4 /* NasaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaClient.swift; sourceTree = "<group>"; };
+		7B4472D024A1453C005942F4 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		7B4472D524A146E8005942F4 /* MarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsCell.swift; sourceTree = "<group>"; };
+		7B4472D824A14ADC005942F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B8F721E24A1A45B003ED20A /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		7B8F722224A1E2DA003ED20A /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		7BC7577324A42ACC00D68C48 /* photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
+		90E535B280E0AB1F714E6DB7 /* Pods_MarsPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA1464068F4315EF576DC80 /* Pods-MarsPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotosTests.release.xcconfig"; path = "Target Support Files/Pods-MarsPhotosTests/Pods-MarsPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10425DB2DC0BB3480D4DD25 /* Pods_MarsPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10EB799DFD77233A35811599 /* Pods_MarsPhotosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +82,8 @@
 				7B4472A224A12896005942F4 /* MarsPhotos */,
 				7B4472B924A1289A005942F4 /* MarsPhotosTests */,
 				7B4472A124A12896005942F4 /* Products */,
+				EC8B6AFFAEBE17A004B126D2 /* Pods */,
+				E102475C5FC70578FA09292D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +99,14 @@
 		7B4472A224A12896005942F4 /* MarsPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				7B4472D724A14AB4005942F4 /* Controller */,
+				7B4472D424A146D2005942F4 /* View */,
+				7B4472C624A129AE005942F4 /* Model */,
 				7B4472A324A12896005942F4 /* AppDelegate.swift */,
-				7B4472A524A12896005942F4 /* SceneDelegate.swift */,
-				7B4472A724A12896005942F4 /* ViewController.swift */,
-				7B4472A924A12896005942F4 /* Main.storyboard */,
 				7B4472AC24A12899005942F4 /* Assets.xcassets */,
 				7B4472AE24A12899005942F4 /* LaunchScreen.storyboard */,
 				7B4472B124A12899005942F4 /* Info.plist */,
+				7B4472D824A14ADC005942F4 /* Extensions.swift */,
 			);
 			path = MarsPhotos;
 			sourceTree = "<group>";
@@ -93,10 +114,73 @@
 		7B4472B924A1289A005942F4 /* MarsPhotosTests */ = {
 			isa = PBXGroup;
 			children = (
+				7BC7577324A42ACC00D68C48 /* photos.json */,
 				7B4472BA24A1289A005942F4 /* MarsPhotosTests.swift */,
 				7B4472BC24A1289A005942F4 /* Info.plist */,
 			);
 			path = MarsPhotosTests;
+			sourceTree = "<group>";
+		};
+		7B4472C624A129AE005942F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B8F722224A1E2DA003ED20A /* Operations.swift */,
+				7B4472CD24A13DE1005942F4 /* Responses */,
+				7B4472C924A13144005942F4 /* API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B4472C924A13144005942F4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7B4472CB24A1319A005942F4 /* NasaClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7B4472CD24A13DE1005942F4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7B4472D024A1453C005942F4 /* Content.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		7B4472D424A146D2005942F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B4472D524A146E8005942F4 /* MarsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B4472D724A14AB4005942F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B8F721E24A1A45B003ED20A /* MainCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E102475C5FC70578FA09292D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751CEDF3D7E8800EB1D305EC /* Pods_MarsPhotos.framework */,
+				90E535B280E0AB1F714E6DB7 /* Pods_MarsPhotosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8B6AFFAEBE17A004B126D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65BE24A655EEB264E179FAB9 /* Pods-MarsPhotos.debug.xcconfig */,
+				14446B04B71F519540EE66CC /* Pods-MarsPhotos.release.xcconfig */,
+				3324412527A2D3959B1A8B79 /* Pods-MarsPhotosTests.debug.xcconfig */,
+				BFA1464068F4315EF576DC80 /* Pods-MarsPhotosTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4472BF24A1289A005942F4 /* Build configuration list for PBXNativeTarget "MarsPhotos" */;
 			buildPhases = (
+				26B7534AA95798B6E99A0B38 /* [CP] Check Pods Manifest.lock */,
 				7B44729C24A12896005942F4 /* Sources */,
 				7B44729D24A12896005942F4 /* Frameworks */,
 				7B44729E24A12896005942F4 /* Resources */,
+				EE97137D394A359F27737C1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4472C224A1289A005942F4 /* Build configuration list for PBXNativeTarget "MarsPhotosTests" */;
 			buildPhases = (
+				82388FD1E3625AD88C95307B /* [CP] Check Pods Manifest.lock */,
 				7B4472B224A1289A005942F4 /* Sources */,
 				7B4472B324A1289A005942F4 /* Frameworks */,
 				7B4472B424A1289A005942F4 /* Resources */,
@@ -182,7 +269,6 @@
 			files = (
 				7B4472B024A12899005942F4 /* LaunchScreen.storyboard in Resources */,
 				7B4472AD24A12899005942F4 /* Assets.xcassets in Resources */,
-				7B4472AB24A12896005942F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,19 +276,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC7577424A42ACC00D68C48 /* photos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26B7534AA95798B6E99A0B38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82388FD1E3625AD88C95307B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarsPhotosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE97137D394A359F27737C1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B44729C24A12896005942F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4472A824A12896005942F4 /* ViewController.swift in Sources */,
+				7B4472D624A146E8005942F4 /* MarsCell.swift in Sources */,
+				7B8F722324A1E2DA003ED20A /* Operations.swift in Sources */,
+				7B4472D124A1453C005942F4 /* Content.swift in Sources */,
 				7B4472A424A12896005942F4 /* AppDelegate.swift in Sources */,
-				7B4472A624A12896005942F4 /* SceneDelegate.swift in Sources */,
+				7B8F721F24A1A45B003ED20A /* MainCollectionViewController.swift in Sources */,
+				7B4472D924A14ADC005942F4 /* Extensions.swift in Sources */,
+				7B4472CC24A1319A005942F4 /* NasaClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B4472A924A12896005942F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B4472AA24A12896005942F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B4472AE24A12899005942F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +507,7 @@
 		};
 		7B4472C024A1289A005942F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BE24A655EEB264E179FAB9 /* Pods-MarsPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +526,7 @@
 		};
 		7B4472C124A1289A005942F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14446B04B71F519540EE66CC /* Pods-MarsPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +545,7 @@
 		};
 		7B4472C324A1289A005942F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3324412527A2D3959B1A8B79 /* Pods-MarsPhotosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +568,7 @@
 		};
 		7B4472C424A1289A005942F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA1464068F4315EF576DC80 /* Pods-MarsPhotosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
