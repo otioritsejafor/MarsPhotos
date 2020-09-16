@@ -75,7 +75,6 @@ class MarsCell: UICollectionViewCell {
     // MARK: Helpers
     func configure() {
         guard let photoData = photoData else { return }
-
         infoLabel.text = "\(photoData.earthDate) on a \(photoData.camera.name)"
     }
     

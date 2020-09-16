@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/otioritsejafor/Documents/job interview/MarsPhotos/MarsPhotos/RoverPhoto+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/otioritsejafor/Documents/job interview/MarsPhotos/MarsPhotos/RoverPhoto+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:MarsPhotos.xcodeproj">
    </FileRef>
    <FileRef

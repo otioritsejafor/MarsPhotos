@@ -23,6 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        DataStack.saveContext()
+       // saveViewContext()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+          DataStack.saveContext()
+      }
 
     // MARK: UISceneSession Lifecycle
 //

@@ -31,7 +31,7 @@ class MainCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        collectionView.backgroundColor = .purple
+        collectionView.backgroundColor = .black
 
         self.collectionView.register(MarsCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         getImages()
@@ -41,7 +41,8 @@ class MainCollectionViewController: UICollectionViewController {
     // MARK: Helpers
     
     func getImages() {
-        NasaClient.shared.getOpportunityPhotos(page: 0) { (roverData, error) in
+        NasaClient.shared.getOpportunityPhotos(page: 0) { [weak self] (roverData, error) in
+            guard let self = self else { return }
                 guard error == nil else {
                     print("Failed to pull photo data")
                     self.downloadError = true
@@ -54,14 +55,13 @@ class MainCollectionViewController: UICollectionViewController {
                 self.roverPhotos = roverData!.photos
              
                 DispatchQueue.main.async {
-                    print("reloaded")
                     self.reloadView()
                 }
             }
         }
     
+    
     func reloadView() {
-        //collectionView.reloadData()
         
         collectionView.performBatchUpdates({
             print("Done")
@@ -74,7 +74,7 @@ class MainCollectionViewController: UICollectionViewController {
     
     
     func configureUI() {
-        configureNavBar(withTitle: "Opportunity", prefersLargeTitles: true, color: .purple, titleColor: .white)
+        configureNavBar(withTitle: "Opportunity", prefersLargeTitles: true, color: .black, titleColor: .white)
     }
     
     

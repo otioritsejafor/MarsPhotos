@@ -18,6 +18,11 @@
 		7B4472D924A14ADC005942F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4472D824A14ADC005942F4 /* Extensions.swift */; };
 		7B8F721F24A1A45B003ED20A /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F721E24A1A45B003ED20A /* MainCollectionViewController.swift */; };
 		7B8F722324A1E2DA003ED20A /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F722224A1E2DA003ED20A /* Operations.swift */; };
+		7BB9F65F24ABAF91006CE589 /* MarsPhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9F65D24ABAF91006CE589 /* MarsPhotos.xcdatamodeld */; };
+		7BB9F66324ABB3B9006CE589 /* RoverPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9F66224ABB3B9006CE589 /* RoverPhoto+CoreDataProperties.swift */; };
+		7BB9F66424ABB3B9006CE589 /* RoverPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9F66124ABB3B9006CE589 /* RoverPhoto+CoreDataClass.swift */; };
+		7BB9F66624ABB3F7006CE589 /* DataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9F66524ABB3F7006CE589 /* DataStack.swift */; };
+		7BB9F66824ABB41C006CE589 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB9F66724ABB41C006CE589 /* DataController.swift */; };
 		7BC7577424A42ACC00D68C48 /* photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BC7577324A42ACC00D68C48 /* photos.json */; };
 		F10425DB2DC0BB3480D4DD25 /* Pods_MarsPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751CEDF3D7E8800EB1D305EC /* Pods_MarsPhotos.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +42,7 @@
 		3324412527A2D3959B1A8B79 /* Pods-MarsPhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotosTests.debug.xcconfig"; path = "Target Support Files/Pods-MarsPhotosTests/Pods-MarsPhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		65BE24A655EEB264E179FAB9 /* Pods-MarsPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotos.debug.xcconfig"; path = "Target Support Files/Pods-MarsPhotos/Pods-MarsPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 		751CEDF3D7E8800EB1D305EC /* Pods_MarsPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B4472A024A12896005942F4 /* MarsPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4472A024A12896005942F4 /* Planet 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4472A324A12896005942F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4472AC24A12899005942F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B4472AF24A12899005942F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		7B4472D824A14ADC005942F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7B8F721E24A1A45B003ED20A /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		7B8F722224A1E2DA003ED20A /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		7BB9F65E24ABAF91006CE589 /* MarsPhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarsPhotos.xcdatamodel; sourceTree = "<group>"; };
+		7BB9F66124ABB3B9006CE589 /* RoverPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RoverPhoto+CoreDataClass.swift"; path = "/Users/otioritsejafor/Documents/job interview/MarsPhotos/MarsPhotos/RoverPhoto+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		7BB9F66224ABB3B9006CE589 /* RoverPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RoverPhoto+CoreDataProperties.swift"; path = "/Users/otioritsejafor/Documents/job interview/MarsPhotos/MarsPhotos/RoverPhoto+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		7BB9F66524ABB3F7006CE589 /* DataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStack.swift; sourceTree = "<group>"; };
+		7BB9F66724ABB41C006CE589 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7BC7577324A42ACC00D68C48 /* photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photos.json; sourceTree = "<group>"; };
 		90E535B280E0AB1F714E6DB7 /* Pods_MarsPhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarsPhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA1464068F4315EF576DC80 /* Pods-MarsPhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarsPhotosTests.release.xcconfig"; path = "Target Support Files/Pods-MarsPhotosTests/Pods-MarsPhotosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +100,7 @@
 		7B4472A124A12896005942F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B4472A024A12896005942F4 /* MarsPhotos.app */,
+				7B4472A024A12896005942F4 /* Planet 4.app */,
 				7B4472B624A1289A005942F4 /* MarsPhotosTests.xctest */,
 			);
 			name = Products;
@@ -99,6 +109,8 @@
 		7B4472A224A12896005942F4 /* MarsPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				7BB9F66024ABB231006CE589 /* CoreData */,
+				7BB9F65924ABAF4D006CE589 /* Resources */,
 				7B4472D724A14AB4005942F4 /* Controller */,
 				7B4472D424A146D2005942F4 /* View */,
 				7B4472C624A129AE005942F4 /* Model */,
@@ -163,6 +175,25 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		7BB9F65924ABAF4D006CE589 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BB9F65D24ABAF91006CE589 /* MarsPhotos.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7BB9F66024ABB231006CE589 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7BB9F66124ABB3B9006CE589 /* RoverPhoto+CoreDataClass.swift */,
+				7BB9F66224ABB3B9006CE589 /* RoverPhoto+CoreDataProperties.swift */,
+				7BB9F66524ABB3F7006CE589 /* DataStack.swift */,
+				7BB9F66724ABB41C006CE589 /* DataController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E102475C5FC70578FA09292D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +233,7 @@
 			);
 			name = MarsPhotos;
 			productName = MarsPhotos;
-			productReference = 7B4472A024A12896005942F4 /* MarsPhotos.app */;
+			productReference = 7B4472A024A12896005942F4 /* Planet 4.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B4472B524A1289A005942F4 /* MarsPhotosTests */ = {
@@ -352,12 +383,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4472D624A146E8005942F4 /* MarsCell.swift in Sources */,
+				7BB9F66824ABB41C006CE589 /* DataController.swift in Sources */,
 				7B8F722324A1E2DA003ED20A /* Operations.swift in Sources */,
 				7B4472D124A1453C005942F4 /* Content.swift in Sources */,
 				7B4472A424A12896005942F4 /* AppDelegate.swift in Sources */,
+				7BB9F66324ABB3B9006CE589 /* RoverPhoto+CoreDataProperties.swift in Sources */,
 				7B8F721F24A1A45B003ED20A /* MainCollectionViewController.swift in Sources */,
 				7B4472D924A14ADC005942F4 /* Extensions.swift in Sources */,
 				7B4472CC24A1319A005942F4 /* NasaClient.swift in Sources */,
+				7BB9F66624ABB3F7006CE589 /* DataStack.swift in Sources */,
+				7BB9F65F24ABAF91006CE589 /* MarsPhotos.xcdatamodeld in Sources */,
+				7BB9F66424ABB3B9006CE589 /* RoverPhoto+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +554,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.magloboid.MarsPhotos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Planet 4";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,7 +573,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.magloboid.MarsPhotos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Planet 4";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -620,6 +656,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BB9F65D24ABAF91006CE589 /* MarsPhotos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BB9F65E24ABAF91006CE589 /* MarsPhotos.xcdatamodel */,
+			);
+			currentVersion = 7BB9F65E24ABAF91006CE589 /* MarsPhotos.xcdatamodel */;
+			path = MarsPhotos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7B44729824A12896005942F4 /* Project object */;
 }

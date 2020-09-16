@@ -21,8 +21,6 @@ class ImageDownloadOperation: Operation {
         if isCancelled { return }
         
         // TODO: Fetch Rover Image
-//        guard let imageData = try? Data(contentsOf: URL(string: marsCell.photoData!.imgSrc)!) else { return }
-        
         DispatchQueue.main.async {
             self.marsCell.cellImageView.sd_setImage(with: URL(string: self.marsCell.photoData!.imgSrc)!, placeholderImage: UIImage(named: "placeholder"), options: [.progressiveLoad]) { (image, _, _, _) in
                 
