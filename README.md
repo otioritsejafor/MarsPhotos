@@ -18,7 +18,6 @@ To run, make sure you have XCode 10.2 or higher.
 **Setup** \
 In order to run the project, clone or download the repo into a directory, then navigate to that directory using cd. 
 Once there, run `pod install`. Open MarsPhotos.xcworkspace and chose to either run on a physical device or a simulator.
-\\
+
 ### Third party components
-* Mapbox API for location services
 * SDWebImages for loading and caching images
