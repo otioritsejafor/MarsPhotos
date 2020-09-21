@@ -11,9 +11,9 @@ import SDWebImage
 
 class ImageDownloadOperation: Operation {
     var loadingCompleteHandler: ((Photo) -> Void)?
-    let marsCell: MarsCell
+    let marsCell: PhotoCell
     
-    init(_ marsCell: MarsCell) {
+    init(_ marsCell: PhotoCell) {
         self.marsCell = marsCell
     }
     

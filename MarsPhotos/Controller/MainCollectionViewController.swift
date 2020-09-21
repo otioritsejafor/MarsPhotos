@@ -12,6 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class MainCollectionViewController: UICollectionViewController {
     
+    enum Section {
+        case main
+    }
+    
     // MARK: Properties
     
     var roverPhotos: [Photo]?
@@ -23,8 +27,8 @@ class MainCollectionViewController: UICollectionViewController {
       return collectionView.bounds.width - (insets.left + insets.right)
     }
     var downloadError = false
-    
     let pendingOperations = PendingOperations()
+    var dataSource: UICollectionViewDiffableDataSource<Section, Photo>!
     
     // MARK: Lifecycle
 
@@ -33,9 +37,10 @@ class MainCollectionViewController: UICollectionViewController {
         configureUI()
         collectionView.backgroundColor = .black
 
-        self.collectionView.register(MarsCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+    
         getImages()
-
+        configureDataSource()
     }
     
     // MARK: Helpers
@@ -46,31 +51,45 @@ class MainCollectionViewController: UICollectionViewController {
                 guard error == nil else {
                     print("Failed to pull photo data")
                     self.downloadError = true
-                    DispatchQueue.main.async {
-                        self.reloadView()
-                    }
                     return
                 }
                 
-                self.roverPhotos = roverData!.photos
-             
-                DispatchQueue.main.async {
-                    self.reloadView()
-                }
+            self.roverPhotos = roverData!.photos
+            self.updateData()
+            
             }
         }
     
     
-    func reloadView() {
-        
-        collectionView.performBatchUpdates({
-            print("Done")
-        }) { (_ ) in
+    func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, Photo>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, photo) -> UICollectionViewCell? in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoCell
+            cell.photoData = photo
             
-        }
-        
+            if self.downloadError == true {
+                cell.imageState = .failed
+                cell.infoLabel.text = "Failed to load"
+            }
+            
+            // Asynchronous Tasks
+            switch cell.imageState {
+            case .failed:
+                cell.infoLabel.text = "Failed to load"
+            case .new:
+                self.startOperations(for: cell, at: indexPath)
+            }
+            
+            return cell
+        })
     }
     
+    func updateData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Photo>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(roverPhotos!)
+        DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true, completion: nil) }
+        
+    }
     
     
     func configureUI() {
@@ -79,7 +98,7 @@ class MainCollectionViewController: UICollectionViewController {
     
     
     // MARK: Operations
-    func startOperations(for marsCell: MarsCell, at indexPath: IndexPath) {
+    func startOperations(for marsCell: PhotoCell, at indexPath: IndexPath) {
       switch (marsCell.imageState) {
       case .new:
         startDownload(for: marsCell, at: indexPath)
@@ -88,7 +107,7 @@ class MainCollectionViewController: UICollectionViewController {
       }
     }
     
-    func startDownload(for marsCell: MarsCell, at indexPath: IndexPath) {
+    func startDownload(for marsCell: PhotoCell, at indexPath: IndexPath) {
       guard pendingOperations.downloadsInProgress[indexPath] == nil else {
         return
       }
@@ -108,41 +127,6 @@ class MainCollectionViewController: UICollectionViewController {
         
       pendingOperations.downloadsInProgress[indexPath] = downloader
       pendingOperations.downloadQueue.addOperation(downloader)
-    }
-    
-    
-    // MARK: Collection View Properties
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return roverPhotos?.count ?? 25
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MarsCell
-        
-            if downloadError == true {
-                cell.imageState = .failed
-                cell.infoLabel.text = "Failed to load"
-            }
-            
-            guard roverPhotos?[indexPath.row] == nil else {
-                let photoData = roverPhotos![indexPath.row]
-                cell.photoData = photoData
-                
-                // Asynchronous Tasks
-                switch cell.imageState {
-                case .failed:
-                    cell.infoLabel.text = "Failed to load"
-                case .new:
-                    startOperations(for: cell, at: indexPath)
-                    //collectionView.upda
-                }
-                return cell
-            }
-
-            collectionView.reloadItems(at: [indexPath])
-            return cell
-
     }
 
 }

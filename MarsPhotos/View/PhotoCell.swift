@@ -14,7 +14,7 @@ enum PhotoImageState {
 }
 
 
-class MarsCell: UICollectionViewCell {
+class PhotoCell: UICollectionViewCell {
     // MARK: Properties
     
     var photoData: Photo? {

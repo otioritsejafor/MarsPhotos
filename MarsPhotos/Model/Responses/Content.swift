@@ -14,7 +14,8 @@ struct RoverData: Codable {
 }
 
 // MARK: - Photo
-struct Photo: Codable {
+struct Photo: Codable, Hashable {
+    
     let id, sol: Int
     let camera: Camera
     let imgSrc: String
@@ -27,10 +28,15 @@ struct Photo: Codable {
         case earthDate = "earth_date"
         case rover
     }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return (lhs.id == rhs.id)
+    }
+    
 }
 
 // MARK: - Camera
-struct Camera: Codable {
+struct Camera: Codable, Hashable {
     let id: Int
     let name: String
     let roverID: Int
@@ -44,7 +50,7 @@ struct Camera: Codable {
 }
 
 // MARK: - Rover
-struct Rover: Codable {
+struct Rover: Codable, Hashable {
     let id: Int
     let name, landingDate, launchDate, status: String
 
